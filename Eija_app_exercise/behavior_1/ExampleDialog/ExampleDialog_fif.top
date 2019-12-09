@@ -1,0 +1,11 @@
+topic: ~ExampleDialog()
+language: fif
+
+concept:(compliment) [hienoa loistavaa mainiota upeaa "hyvin meni" "hyvä hyvä"]
+concept:(wait3000) \\pau=1000\\
+
+u:(e:onStart) Hei kaikki! Minun nimeni on Nao. Minä olen robotti. Tykkään harrastaa liikuntaa, vaikka olenkin vähän kankea. Yritän aina parhaani. Minä ohjaan teille nyt alkulämmittelyjumpan. Näytän ensin tehtävän liikkeen itse, jonka jälkeen toistamme sen yhdessä. ^gotoReactivate(marching)
+
+proposal: %marching Ensimmäisenä marssitaan paikoillaan. ~wait3000 $marching=1 Kas näin: nostetaan jalkoja ja käsiä ylös ja alas. Toistakaa mukana.
+
+
